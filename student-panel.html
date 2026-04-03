@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EDUCORE Student Panel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="logo" href="index.html"><span class="logo-mark">E</span><span>EDUCORE</span></a>
+    <nav class="nav-links">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="courses.html">Courses</a>
+      <a data-nav href="student-panel.html">Dashboard</a>
+      <a data-nav href="login.html">Login / Register</a>
+    </nav>
+    <a class="btn btn-primary" href="courses.html">Explore courses</a>
+  </div>
+</header>
+
+<section class="panel-wrap">
+  <div class="container panel-grid">
+    <aside class="sidebar-card">
+      <a href="#" class="side-link active" data-panel-link="dashboard">Dashboard</a>
+      <a href="#" class="side-link" data-panel-link="video-learning">Video Learning</a>
+      <a href="#" class="side-link" data-panel-link="progress">Progress</a>
+      <a href="#" class="side-link" data-panel-link="certificate">Certificates</a>
+      <a href="#" class="side-link" data-panel-link="profile">Profile</a>
+      <a href="#" class="side-link" data-panel-link="settings">Settings</a>
+      <a href="login.html" class="side-link">Logout</a>
+    </aside>
+
+    <main>
+      <section id="dashboard" class="panel-section active">
+        <span class="kicker">Dashboard overview</span>
+        <h1>Welcome back, Sarah.</h1>
+        <p>Track enrolled courses, completed lessons, ongoing progress, and recent learning updates.</p>
+
+        <div class="stats" style="margin-top:24px">
+          <div class="stat"><strong>08</strong><p>Total enrolled courses</p></div>
+          <div class="stat"><strong>03</strong><p>Completed courses</p></div>
+          <div class="stat"><strong>05</strong><p>Ongoing courses</p></div>
+          <div class="stat"><strong>18</strong><p>Learning streak days</p></div>
+        </div>
+
+        <div class="grid-2 section" style="padding-bottom:0">
+          <article class="card">
+            <h3>Continue learning</h3>
+            <p>AI and Data Intelligence — Module 4: Prompt engineering and automation.</p>
+            <div class="progress"><span style="width:78%"></span></div>
+            <div class="inline-actions" style="margin-top:16px">
+              <a class="btn btn-primary" href="#" data-panel-link="video-learning">Open lesson</a>
+            </div>
+          </article>
+
+          <article class="notification-card">
+            <h3>Notifications & updates</h3>
+            <ul class="list">
+              <li>New quiz unlocked in AI and Data Intelligence</li>
+              <li>Business Analytics certificate is ready</li>
+              <li>Two new premium courses added this week</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="video-learning" class="panel-section">
+        <span class="kicker">Video learning</span>
+        <h2>Applied AI lesson player</h2>
+        <div class="grid-2 section" style="padding-top:24px;padding-bottom:0">
+          <article class="video-card">
+            <div class="video-screen">
+              <div class="floating-box" style="position:static;width:100%">
+                <span class="tag">Now playing</span>
+                <h3>Module 4: Prompt engineering and automation</h3>
+                <p>Watch the lecture, continue to next lesson, or mark this one complete.</p>
+              </div>
+            </div>
+            <div class="inline-actions" style="margin-top:18px">
+              <a class="btn btn-secondary" href="#">Previous lesson</a>
+              <a class="btn btn-primary" href="#">Next lesson</a>
+              <a class="btn btn-secondary" href="#">Mark complete</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Lesson list</h3>
+            <ul class="list">
+              <li>Lesson 1: AI fundamentals</li>
+              <li>Lesson 2: Data preparation</li>
+              <li>Lesson 3: Model basics</li>
+              <li>Lesson 4: Prompt engineering</li>
+              <li>Lesson 5: Project walkthrough</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="progress" class="panel-section">
+        <span class="kicker">Progress tracking</span>
+        <h2>Overall and course-wise learning progress.</h2>
+        <div class="grid-2 section" style="padding-top:24px;padding-bottom:0">
+          <article class="progress-card">
+            <h3>Overall progress</h3>
+            <span class="progress-number">68%</span>
+            <div class="progress"><span style="width:68%"></span></div>
+          </article>
+
+          <article class="progress-card">
+            <h3>Completion indicators</h3>
+            <ul class="list">
+              <li>Completed courses: 03</li>
+              <li>Certificates earned: 03</li>
+              <li>Premium courses active: 02</li>
+            </ul>
+          </article>
+
+          <article class="progress-card">
+            <h3>Course-wise breakdown</h3>
+            <ul class="list">
+              <li>AI and Data Intelligence<div class="progress"><span style="width:78%"></span></div></li>
+              <li>UI/UX Design Systems<div class="progress"><span style="width:72%"></span></div></li>
+              <li>Healthcare Foundations<div class="progress"><span style="width:46%"></span></div></li>
+              <li>Business Analytics<div class="progress"><span style="width:100%"></span></div></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="certificate" class="panel-section">
+        <span class="kicker">Certificates</span>
+        <h2>Display and download verified completion certificates.</h2>
+        <div class="certificate-card" style="margin-top:24px">
+          <div class="cert-preview">
+            <h2>Certificate of Completion</h2>
+            <p>This certifies that</p>
+            <h3 style="font-size:2rem;margin:10px 0">Sarah</h3>
+            <p>has successfully completed</p>
+            <h3>Business Analytics</h3>
+            <p>Completion date: 03 April 2026</p>
+          </div>
+          <div class="inline-actions" style="margin-top:18px;justify-content:center">
+            <a class="btn btn-primary" href="#">Download certificate</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="profile" class="panel-section">
+        <span class="kicker">Profile page</span>
+        <h2>Structured user profile integrated with progress and dashboard.</h2>
+
+        <div class="grid-2 section" style="padding-top:24px;padding-bottom:0">
+          <article class="profile-card">
+            <div class="profile-head">
+              <div class="avatar">SH</div>
+              <div>
+                <h3>Sarah</h3>
+                <p>sarah@educore.com</p>
+                <p>Focused learner exploring AI, product design, and business strategy for career growth.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="profile-card">
+            <h3>Achievements</h3>
+            <ul class="list">
+              <li>Certificates earned: 03</li>
+              <li>Completed courses: 03</li>
+              <li>Learning streak: 18 days</li>
+              <li>Premium member status active</li>
+            </ul>
+          </article>
+
+          <article class="profile-card">
+            <h3>Personal information</h3>
+            <form class="form-grid">
+              <div class="field">
+                <label>Username</label>
+                <input type="text" value="Sarah">
+              </div>
+              <div class="field">
+                <label>Phone number</label>
+                <input type="text" value="+91 98765 43210">
+              </div>
+              <div class="field full">
+                <label>Short bio</label>
+                <textarea rows="4">Interested in AI systems, UI/UX, and online education growth.</textarea>
+              </div>
+              <div class="field full">
+                <a class="btn btn-primary" href="#">Edit profile</a>
+              </div>
+            </form>
+          </article>
+
+          <article class="profile-card">
+            <h3>Enrolled courses</h3>
+            <ul class="list">
+              <li>AI and Data Intelligence<div class="progress"><span style="width:78%"></span></div></li>
+              <li>UI/UX Design Systems<div class="progress"><span style="width:72%"></span></div></li>
+              <li>Healthcare Foundations<div class="progress"><span style="width:46%"></span></div></li>
+            </ul>
+          </article>
+
+          <article class="profile-card">
+            <h3>Activity history</h3>
+            <ul class="list">
+              <li>Recently viewed: Prompt workflows lesson</li>
+              <li>Watched 2 hours of video lessons today</li>
+              <li>Opened progress dashboard this morning</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="settings" class="panel-section">
+        <span class="kicker">Account settings</span>
+        <h2>Manage account and security settings.</h2>
+        <div class="grid-2 section" style="padding-top:24px;padding-bottom:0">
+          <article class="profile-card">
+            <h3>Account controls</h3>
+            <div class="inline-actions">
+              <a class="btn btn-secondary" href="#">Change password</a>
+              <a class="btn btn-secondary" href="#">Edit profile</a>
+              <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
+          </article>
+
+          <article class="profile-card">
+            <h3>Connected workflow</h3>
+            <p>This profile is connected with dashboard summaries, course progress, video lessons, and certificate completion records.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

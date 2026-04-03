@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EDUCORE Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <section class="auth-wrap">
+    <div class="container auth-grid">
+      <div class="auth-banner">
+        <span class="kicker">Welcome to EDUCORE</span>
+        <h2>Start with login and continue your learning journey.</h2>
+        <p>Access courses, progress, video lessons, certificates, and your full student profile from one simple platform.</p>
+      </div>
+
+      <div class="auth-card">
+        <div class="logo" style="margin-bottom:18px">
+          <span class="logo-mark">E</span><span>EDUCORE</span>
+        </div>
+
+        <h2 style="margin-bottom:10px">Login / Register</h2>
+        <p>One page includes login, register, and password recovery sections.</p>
+
+        <div class="inline-actions" style="margin-top:18px;margin-bottom:8px">
+          <a class="chip" href="#login-box">Login</a>
+          <a class="chip" href="#register-box">Register</a>
+          <a class="chip" href="#forgot-box">Forgot Password</a>
+        </div>
+
+        <div id="login-box" class="profile-card" style="margin-top:18px">
+          <h3>Login</h3>
+          <form class="form-grid">
+            <div class="field full">
+              <label>Email</label>
+              <input type="email" placeholder="student@educore.com">
+            </div>
+            <div class="field full">
+              <label>Password</label>
+              <input type="password" placeholder="Enter password">
+            </div>
+            <div class="field full">
+              <a class="btn btn-primary" href="index.html">Login</a>
+            </div>
+          </form>
+        </div>
+
+        <div id="register-box" class="profile-card" style="margin-top:18px">
+          <h3>Register</h3>
+          <form class="form-grid">
+            <div class="field">
+              <label>Full name</label>
+              <input type="text" placeholder="Enter full name">
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input type="email" placeholder="Enter email">
+            </div>
+            <div class="field">
+              <label>Phone</label>
+              <input type="text" placeholder="Phone number">
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <input type="password" placeholder="Create password">
+            </div>
+            <div class="field full">
+              <a class="btn btn-primary" href="index.html">Create account</a>
+            </div>
+          </form>
+        </div>
+
+        <div id="forgot-box" class="profile-card" style="margin-top:18px">
+          <h3>Forgot password</h3>
+          <form class="form-grid">
+            <div class="field full">
+              <label>Registered email</label>
+              <input type="email" placeholder="Enter your email">
+            </div>
+            <div class="field full">
+              <a class="btn btn-secondary" href="#">Reset password</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

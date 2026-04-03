@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EDUCORE Courses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="logo" href="index.html"><span class="logo-mark">E</span><span>EDUCORE</span></a>
+    <nav class="nav-links">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="courses.html">Courses</a>
+      <a data-nav href="student-panel.html">Dashboard</a>
+      <a data-nav href="login.html">Login / Register</a>
+    </nav>
+    <a class="btn btn-primary" href="student-panel.html">My learning</a>
+  </div>
+</header>
+
+<section class="page-hero" id="courses-top">
+  <div class="container">
+    <span class="kicker">Courses page</span>
+    <h1>Explore all learning categories from one organized catalog.</h1>
+    <p>Search, filter by category, and view course details with instructor, duration, level, and enroll status.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="searchbar">
+      <div class="grow"><input type="text" placeholder="Search course, category, or instructor"></div>
+      <select>
+        <option>All categories</option>
+        <option>CSE</option>
+        <option>AI</option>
+        <option>Business</option>
+        <option>Medical</option>
+        <option>Mechanical</option>
+        <option>Civil</option>
+        <option>Geology</option>
+        <option>Fashion Design</option>
+        <option>UI/UX</option>
+      </select>
+      <select>
+        <option>Status</option>
+        <option>Enroll now</option>
+        <option>In progress</option>
+        <option>Premium</option>
+      </select>
+    </div>
+
+    <div class="grid-3">
+      <article class="course-card">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Programming course" width="800" height="600" loading="lazy">
+        <span class="tag">CSE</span>
+        <h3>Computer Science Essentials</h3>
+        <p>Instructor: Dr. Kavin | Duration: 12 weeks | Status: Enroll open</p>
+        <div class="inline-actions" style="margin-top:14px">
+          <a href="#" class="btn btn-primary" data-course-open data-title="Computer Science Essentials" data-instructor="Dr. Kavin" data-duration="12 weeks" data-level="Beginner" data-category="CSE" data-status="Enroll open">View course</a>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80" alt="AI course" width="800" height="600" loading="lazy">
+        <span class="tag">AI</span>
+        <h3>AI and Data Intelligence</h3>
+        <p>Instructor: Prof. Mira | Duration: 10 weeks | Status: Premium</p>
+        <div class="inline-actions" style="margin-top:14px">
+          <a href="#" class="btn btn-primary" data-course-open data-title="AI and Data Intelligence" data-instructor="Prof. Mira" data-duration="10 weeks" data-level="Intermediate" data-category="AI" data-status="Premium">View course</a>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80" alt="Medical course" width="800" height="600" loading="lazy">
+        <span class="tag">Medical</span>
+        <h3>Healthcare Foundations</h3>
+        <p>Instructor: Dr. Anika | Duration: 14 weeks | Status: 46% progress</p>
+        <div class="progress"><span style="width:46%"></span></div>
+        <div class="inline-actions" style="margin-top:14px">
+          <a href="#" class="btn btn-primary" data-course-open data-title="Healthcare Foundations" data-instructor="Dr. Anika" data-duration="14 weeks" data-level="Intermediate" data-category="Medical" data-status="In progress">Continue</a>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Business course" width="800" height="600" loading="lazy">
+        <span class="tag">Business</span>
+        <h3>Business Analytics</h3>
+        <p>Instructor: Sarah Lee | Duration: 8 weeks | Status: Enroll open</p>
+        <div class="inline-actions" style="margin-top:14px">
+          <a href="#" class="btn btn-secondary" data-course-open data-title="Business Analytics" data-instructor="Sarah Lee" data-duration="8 weeks" data-level="Beginner" data-category="Business" data-status="Enroll open">View course</a>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <img src="https://images.unsplash.com/photo-1581092919535-7146ff1a5905?auto=format&fit=crop&w=800&q=80" alt="Mechanical course" width="800" height="600" loading="lazy">
+        <span class="tag">Mechanical</span>
+        <h3>Mechanical Systems</h3>
+        <p>Instructor: Vignesh R. | Duration: 9 weeks | Status: Enroll open</p>
+        <div class="inline-actions" style="margin-top:14px">
+          <a href="#" class="btn btn-secondary" data-course-open data-title="Mechanical Systems" data-instructor="Vignesh R." data-duration="9 weeks" data-level="Intermediate" data-category="Mechanical" data-status="Enroll open">View course</a>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=80" alt="UI UX course" width="800" height="600" loading="lazy">
+        <span class="tag">UI/UX</span>
+        <h3>Product UI Systems</h3>
+        <p>Instructor: Nila S. | Duration: 11 weeks | Status: 72% progress</p>
+        <div class="progress"><span style="width:72%"></span></div>
+        <div class="inline-actions" style="margin-top:14px">
+          <a href="#" class="btn btn-primary" data-course-open data-title="Product UI Systems" data-instructor="Nila S." data-duration="11 weeks" data-level="Advanced" data-category="UI/UX" data-status="In progress">Continue</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="pagination">
+      <a class="page-btn active" href="#">1</a>
+      <a class="page-btn" href="#">2</a>
+      <a class="page-btn" href="#">3</a>
+      <a class="page-btn" href="#">›</a>
+    </div>
+
+    <div id="course-detail-box" class="course-detail-box"></div>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
