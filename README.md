@@ -1,8 +1,6 @@
 # EduCore
 **EDUCORE**: Responsive e-learning platform with course catalog, video lessons, student dashboard, progress tracking, certificates, and profile management.
-Perfect Sakhi 😄 — here’s your **professional GitHub README with badges, styling, and clean layout**. You can copy-paste this directly into your `README.md`.
 
----
 
 # 🎓 EDUCORE – E-Learning Platform
 
@@ -128,49 +126,9 @@ To develop a scalable and user-friendly e-learning platform that enables student
 ✔ Track their learning progress
 ✔ Gain certifications in multiple domains
 
----
-
-## 📸 Screenshots (Add Yours Here)
-
-```
-(Add project screenshots here for better presentation)
-```
-
----
-
-## 🔗 Live Demo
-
-```
-(Add your deployed link here – GitHub Pages / Netlify / Vercel)
-```
-
----
-
 ## ⭐ Future Enhancements
 
 * Backend integration (Node.js / Firebase)
 * Real-time progress tracking
 * AI-based course recommendations
 * Mobile app version
-
----
-
-## 🤝 Contribution
-
-Feel free to fork this project and improve it!
-
----
-
-## 📜 License
-
-This project is for educational purposes only.
-
----
-
-If you want next level 🔥, I can:
-
-* Add **cool GitHub animations (typing effect, stats cards)**
-* Help you **deploy this on GitHub Pages**
-* Design **project screenshots UI section**
-
-Just tell me 👍
